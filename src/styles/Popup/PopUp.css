@@ -1,0 +1,82 @@
+  .modal-popup { 
+    position: fixed; 
+    z-index: 999999; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    cursor:default;
+  }
+
+  .modal-popup-content {
+    border-top: 5px solid #005a70;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 4px 5px 0 rgba(0, 0, 0, 0.14);
+    font-family: "Helvetica Neue", sans-serif;
+    color: #000;
+    padding: 16px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 520px;
+    font-size: 16px;
+    line-height: 16px;
+    background-color: #ffffff;
+    top: 38%;
+    transform: translateY(-50%);
+    animation-name: animatetop;
+    animation-duration: 0.8s;
+  }
+
+  @keyframes animatetop {
+    from {top: 30%; opacity: 0}
+    to {top: 38%; opacity: 1}
+  }
+
+  .modal-popup-header {
+    font-family: "Helvetica Neue", sans-serif;
+    line-height: normal;
+    margin-bottom: 17px;
+    font-size: 16px;
+    color: #005a70;
+    font-weight: 600;
+    height: 22px;
+    font-stretch: normal;
+    font-style: normal;
+    margin-top: 6px;
+    letter-spacing: normal;
+  }
+
+  .modal-popup-message {
+    font-weight: bold;
+  }
+
+  .buttons-wrapper {
+    /* padding: 17px 8px 28px; */
+    height: 36px;
+    margin-top: 24px;
+  }
+
+  .ok-button {
+    border-radius: 2px;
+    border: 0;
+    float: right;
+    font-family: inherit;
+    background: #005a70;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+    margin: 0 0 0 16px;
+  }
+
+  .ok-button:hover {
+    background: #07313b;
+  }
+
+  
